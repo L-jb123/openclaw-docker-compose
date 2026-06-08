@@ -22,7 +22,7 @@ services:
       - OPENCLAW_CONFIG_DIR=/home/node/.openclaw
       - OPENCLAW_WORKSPACE_DIR=/home/node/.openclaw/workspace
       # 网关令牌 **必须修改！！！**，用于验证外部请求来源
-      - OPENCLAW_GATEWAY_TOKEN=your-secret-token
+      - OPENCLAW_GATEWAY_TOKEN=kuoyi1231
       - OPENCLAW_DOCKER_APT_PACKAGES=
     volumes:
       # 配置目录：宿主机 ~/.openclaw 映射到容器内 /home/node/.openclaw
@@ -47,7 +47,7 @@ services:
       - OPENCLAW_CONFIG_DIR=/home/node/.openclaw
       - OPENCLAW_WORKSPACE_DIR=/home/node/.openclaw/workspace
       # 网关令牌 **必须修改！！！**，和 gateway 配置保持一致
-      - OPENCLAW_GATEWAY_TOKEN=your-secret-token
+      - OPENCLAW_GATEWAY_TOKEN=kuoyi1231
     # 卷映射与 gateway 保持一致（确保配置共享）
     volumes:
       - ./openclaw:/home/node/.openclaw
